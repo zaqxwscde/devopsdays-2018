@@ -2,7 +2,7 @@
 
 讓我們用 DevOps 的方法，交換 DevOps 的想法。
 
-Demo 網址：
+Demo 網址：https://trendmicro.github.io/devopsdays-2018/
 
 
 ## 活動說明
@@ -14,7 +14,7 @@ Demo 網址：
 
 ## 活動流程
 
-1. 請 **Fork** 此[專案](https://github.com/trendmicro/devopsdays-2018)回自己的 GitHub 帳號下。
+1. 請 **Fork** 此 [專案](https://github.com/trendmicro/devopsdays-2018) 回自己的 GitHub 帳號下。
 
 2. 在 `messages` 這個資料夾下面新增一個以自己 GitHub `username` 為名稱的 YAML 檔案（ex: iamusername.yml）。
 
@@ -41,7 +41,7 @@ Demo 網址：
 
 5. 如果驗證成功，等待數秒鐘則會自動 merge。不成功的話，請確定是否符合上述規則並 close pull request，待修改完成後 reopen pull request。（如果持續不成功的話，請洽現場趨勢科技攤位處理。）
 
-6. 大功告成！感謝您的參與～請前往 [Demo 網站]()看看自己的留言是否有出現在頁面上。
+6. 大功告成！感謝您的參與～請前往 [Demo 網站](https://trendmicro.github.io/devopsdays-2018/) 看看自己的留言是否有出現在頁面上。
 
 7. 領獎方式：<br>
     * 確認在我們的 Demo 網站上有看到您的留言和署名<br>
