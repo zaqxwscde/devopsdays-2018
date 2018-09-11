@@ -36,7 +36,10 @@ def check_pr(pr):
     # check filename
     login = pr.user.login 
     filename = files[0].filename.replace("messages/", "")
-    login_yml = "{login}.yml".format(login=login)
+    if 'yaml' in filename:
+        login_yml = "{login}.yaml".format(login=login)
+    else:
+        login_yml = "{login}.yml".format(login=login)
     print(filename)
     print(login_yml)
     if filename != login_yml:
@@ -74,6 +77,17 @@ def index():
 
     messages = []
     for f in glob.glob("messages/*.yml"):
+        with open(f, 'r') as stream:
+            data = yaml.load(stream)
+            try:
+                messages.append({
+                    'message': data['message'],
+                    'display_name': data['displayname'],
+                    'username': f.replace("messages/", "").replace(".yml", "")
+                })
+            except yaml.YAMLError as exc:
+                print(exc)
+    for f in glob.glob("messages/*.yaml"):
         with open(f, 'r') as stream:
             data = yaml.load(stream)
             try:
