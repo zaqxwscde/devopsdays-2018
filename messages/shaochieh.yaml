@@ -1,1 +1,11 @@
-hello world
+---
+  displayname: SRE
+  message: Hope is not a strategy.
+  skills:
+      - python
+      - perl
+      - c++
+  tools: 
+      - Puppet
+      - Jenkins
+      - Graphite
